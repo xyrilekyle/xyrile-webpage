@@ -1,0 +1,134 @@
+.body {
+  font-family: 'Arial', sans-serif;
+  color: black;
+  line-height: 1.6;
+ background-color: #c084e7;
+}
+.white-section {
+    background-color: lightblue; /* Change this color as needed */
+    padding: 10px; /* Optional: Adds spacing inside the section */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.container {
+  max-width: device-width;
+  margin:  auto;
+  padding: 10px;
+
+}
+.header {
+  background: linear-gradient(135deg, royalblue, lightblue);
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+  background-image: url('tourist_1.jpg');
+  
+}
+section {
+  margin-bottom: 30px;
+  padding:30px;
+  background: linear-gradient(135deg, royalblue, lightblue);
+  border-radius: 8px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+   /* Modal styling */
+    #customModal {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color:lightblue;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0px;
+    }
+
+    #modalContent {
+      background:#9d79d7;
+      padding: 20px;
+      width:20px
+      height:10px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 90%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #modalContent img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+     
+
+     
+    #closeButton {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: none;
+      background-color: #007BFF;
+      color:royalblue ;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+        button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: royalblue; /* Text color */
+      background-color##3294dec0; /* Button background color */
+    background-color:2px solid royalblue; /* Border */
+      border-radius: 8px; /* Rounded corners */
+      cursor: pointer; /* Pointer on hover */
+      margin: 10px 0; /* Spacing between buttons */
+      transition: all 0.3s ease; /* Smooth transitions */
+    }
+
+    /* Hover effect for buttons */
+    button:hover {
+      background-color:royalblue;/* Dark background */
+      color: #fff; /* White text */
+      transform: scale(1.05); /* Slightly enlarges the button */
+    }
+
+    /* Specific styling for Kaparkan Falls button */
+    .kaparkan {
+      font-size: 18px;
+      background-color: #007B; /* Blue background */
+      color: #fff; /* White text */
+      border: 2px solid #0056b3; /* Darker blue border */
+    }
+
+    /* Hover effect for Kaparkan Falls button */
+    .kaparkan:hover {
+      background-color: #0056b3; /* Darker blue */
+    }
+
+
+    /* Centering the content inside the section */
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Video styling */
+    video {
+      width: 100%; /* Make video responsive */
+      max-width: 600px; /* Limit maximum width */
+      border: none; /* No borders */
+      border-radius: 10px;
+    }
+
+    /* Text above video */
+    

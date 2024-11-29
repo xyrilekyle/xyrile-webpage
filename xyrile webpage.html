@@ -1,0 +1,80 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="summ.css">
+  </head>
+  <body>
+    <div class="white-section">
+    <!-- Content of the white section -->
+
+  <header class="header">
+    <div class="container">
+      <h1>Abra, Philippines</h1>
+     <h3><p>Discover the must-visit landmarks of this hidden paradise in Northern Luzon.</p></h3>
+      </div>
+      </header>
+      <main class="container">
+    <section class="about">
+      <h2>About Abra</h2>
+      <img id="image" src=" abra.png" alt="First Image" width="250">
+
+  <br><br>
+     <p> <li>
+ Abra, officially the Province of Abra (Ilocano: Probinsia ti Abra; Tagalog: Lalawigan ng Abra), is a province in the Cordillera Administrative Region of the Philippines. Its capital is the municipality of Bangued, the most populous in the province. It is bordered by Ilocos Norte on the northwest, Apayao on the northeast, Kalinga on the mid-east, Mountain Province on the0p southeast, and Ilocos Sur on the southwest.
+   </li>   </p>
+    </section>  
+    
+  <section class="landmarks">
+   
+<h1>Must-Visit Landmarks</h1>
+ <h3><button class="clickMeButton" data-message="Kaparkan Falls, also known as Mulawin Falls, is a hidden gem located in the heart of Abra, a province in the northern Philippines. This enchanting waterfall has quickly risen to fame due to its unique multi-tiered limestone terraces that resemble a series of natural infinity pools. Unlike any other waterfall in the country, Kaparkan Falls Abra captivates visitors with its cascading crystal-clear waters that flow gently down these terraces, creating a breathtaking natural wonder that is both serene and majestic. " data-image="Kaparkan Falls.jpg"> KAPARKAN FALLS</button></h3>
+  <h2> <button class="clickMeButton" data-message="The Calaba Bridge in the Philippines is currently the longest Modular Bridge ever constructed by Waagner-Biro. It measures 900m and spans the River Abra. For the people of the area, the Calaba Bridge represents a great relief, because, in the past, they were restricted to using a ferry to cross the river which interrupted its service during high waters for safety reasons." data-image="Calaba_Bridge_Philippines_Waagner_Biro.jpg">CALABA BRIDGE</button></h2>
+   <h2><button class="clickMeButton" data-message="Apao Rolling Hills is another obscure spot that you can see in Tineg, Abra. From the viewpoint across the high valley, enjoy a picturesque panorama of dry grassland topped mountains. It is most scenic during sunset when the mountainsides come alive with a spectacular auburn glow." data-image="Apao Hills.png">APAO HILLS</button></h2>
+   <h2><button class="clickMeButton" data-message="Victoria Park, also known as Cassamata Hill National Park, is a stunning natural attraction in the province of Abra in the Philippines.One of the main draws of Victoria Park is its lush greenery and scenic landscapes. The park has various plants and trees, including towering pine trees and vibrant wildflowers. Visitors can stroll along the park's many trails and soak in the sights and sounds of nature." data-image="victoria park.jpg">VICTORIA (CASSAMATA) PARK</button></h2>
+ 
+  <!-- Custom Modal -->
+  <div id="customModal">
+    <div id="modalContent">
+      <p id="modalMessage"></p>
+      <img id="modalImage" src="" alt="Modal Image">
+      <button id="closeButton">Close</button>
+    </div>
+  </div>
+    </section> 
+  <section>
+    <div class="content">
+      <h2>Explore Abra</h2>
+      <video controls>
+        <source src="abra beautiful places.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+  <script>
+
+ // Select modal elements
+    const modal = document.getElementById('customModal');
+    const modalMessage = document.getElementById('modalMessage');
+    const modalImage = document.getElementById('modalImage');
+    const closeButton = document.getElementById('closeButton');
+
+    // Add event listener to all buttons with the class "clickMeButton"
+    document.querySelectorAll('.clickMeButton').forEach(button => {
+      button.addEventListener('click', function() {
+        const message = this.getAttribute('data-message'); // Get the custom message
+        const imageSrc = this.getAttribute('data-image'); // Get the image source
+        modalMessage.textContent = message; // Set the modal message
+        modalImage.src = imageSrc; // Set the modal image
+        modal.style.display = 'flex'; // Show the modal
+      });
+    });
+
+    // Add event listener to close the modal
+    closeButton.addEventListener('click', function() {
+      modal.style.display = 'none'; // Hide the modal
+    });
+  </script>
+  </bbody
+  </div>
